@@ -1,6 +1,7 @@
 import logo from "../../public/logo.svg";
 import { LuUserRound } from "react-icons/lu";
 import { LuShoppingCart } from "react-icons/lu";
+import { LuAlignJustify } from "react-icons/lu";
 
 export default function Header() {
   return (
@@ -15,13 +16,21 @@ export default function Header() {
             <img src={logo} alt="logo" srcset="" />
           </div>
           <nav>
-            <ul className="flex justify-center gap-5 text-sm">
+            <ul className="hidden lg:flex justify-center gap-5 text-sm">
               <li>Inicio</li>
               <li>Productos</li>
               <li>Contacto</li>
             </ul>
           </nav>
-          <div className="flex gap-6">
+
+          {/**Hamburger menu */}
+          <div className="hidden max-lg:flex justify-center items-center gap-2">
+            <LuAlignJustify className="text-xl" />
+            <LuShoppingCart className="text-xl" />
+          </div>
+
+          {/**Login - Carrito */}
+          <div className="hidden lg:flex gap-6">
             <div className="flex flex-col items-center">
               <LuUserRound className="text-xl" />
               <p className="text-xs">Mi cuenta</p>
