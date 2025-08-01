@@ -1,6 +1,6 @@
-import Container from "./Container";
+import Container from "../components/Container";
 import HeroImg from "../../public/hero.png";
-import Button from "./Button";
+import Button from "../components/Button";
 
 export default function Hero() {
   return (
