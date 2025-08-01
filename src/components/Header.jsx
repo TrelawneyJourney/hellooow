@@ -9,13 +9,13 @@ export default function Header() {
         <p>🚚 Envío GRATIS en compras superiores a $90.000</p>
       </div>
 
-      <div className="bg-amber-100 w-full py-3.5">
+      <div className="w-full py-2.5 bg-amber-100 border-b border-b-neutral-300/50">
         <div className="flex justify-between items-center max-w-[1200px] mx-auto px-4">
           <div className="w-[100px]">
             <img src={logo} alt="logo" srcset="" />
           </div>
           <nav>
-            <ul className="flex justify-center gap-4">
+            <ul className="flex justify-center gap-5 text-sm">
               <li>Inicio</li>
               <li>Productos</li>
               <li>Contacto</li>
@@ -23,11 +23,11 @@ export default function Header() {
           </nav>
           <div className="flex gap-6">
             <div className="flex flex-col items-center">
-              <LuUserRound />
+              <LuUserRound className="text-xl" />
               <p className="text-xs">Mi cuenta</p>
             </div>
             <div className="flex flex-col items-center">
-              <LuShoppingCart />
+              <LuShoppingCart className="text-xl" />
               <p className="text-xs">Mi carrito</p>
             </div>
           </div>
