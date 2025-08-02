@@ -17,9 +17,9 @@ export default function Hero() {
               </p>
 
               {/**Tags Mobile */}
-              <p className="hidden max-md:block uppercase text-3xl tracking-[7.7px] leading-12">
+              <p className="hidden max-md:block uppercase text-2xl font-semibold tracking-[7.7px] leading-10">
                 <span className="block">decorá tu Hogar</span>
-                <span className="block tracking-[10px]">con alma felina </span>
+                <span className="block tracking-[9px]">con alma felina </span>
               </p>
 
               <p className="text-sm lg:text-xl font-semibold tracking-[1.5px]">

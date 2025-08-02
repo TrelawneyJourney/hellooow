@@ -12,9 +12,10 @@ export default function Header() {
 
       <div className="w-full py-2.5 bg-amber-100 border-b border-b-neutral-300/50">
         <div className="flex justify-between items-center max-w-[1200px] mx-auto px-4">
-          <div className="w-[100px]">
+          <div className="hidden md:w-[100px]">
             <img src={logo} alt="logo" srcset="" />
           </div>
+
           <nav>
             <ul className="hidden lg:flex justify-center gap-5 text-sm">
               <li>Inicio</li>
@@ -24,8 +25,11 @@ export default function Header() {
           </nav>
 
           {/**Hamburger menu */}
-          <div className="hidden max-lg:flex justify-center items-center gap-2">
+          <div className="hidden max-lg:flex justify-between items-center  mx-auto w-full">
             <LuAlignJustify className="text-xl" />
+            <div className="w-[150px]">
+              <img src={logo} alt="logo" srcset="" />
+            </div>
             <LuShoppingCart className="text-xl" />
           </div>
 
