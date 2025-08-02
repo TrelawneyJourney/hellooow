@@ -1,5 +1,7 @@
+import Footer from "../sections/Footer";
 import Header from "../sections/Header";
 import Hero from "../sections/Hero";
+import Newsletter from "../sections/Newsletter";
 import NuevosIngresos from "../sections/NuevosIngresos";
 
 function HomePage() {
@@ -8,6 +10,8 @@ function HomePage() {
       <Header />
       <Hero />
       <NuevosIngresos />
+      <Newsletter />
+      <Footer />
     </div>
   );
 }
