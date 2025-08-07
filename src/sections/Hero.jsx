@@ -1,8 +1,12 @@
 import Container from "../components/Container";
-import HeroImg from "../../public/hero.png";
+import CuadroCard from "../components/CuadroCard";
+import { hero } from "../assets/img";
 import Button from "../components/Button";
+import { cuadros } from "../constants";
+import { useState } from "react";
 
 export default function Hero() {
+  const [heroImage, setHeroImage] = useState(hero);
   return (
     <section className="relative h-[570px] bg-amber-100">
       <Container>
@@ -31,8 +35,21 @@ export default function Hero() {
               </p>
             </div>
 
-            <div className="">
+            <div className="hidden md:block">
               <Button>Ver productos</Button>
+            </div>
+
+            {/**cuadros selections */}
+            <div className="hidden xl:flex xl:flex-row xl:justify-start xl:w-md xl:bg-amber-50 xl:p-2 xl:gap-2">
+              {cuadros.map((cuadro) => (
+                <div key={cuadro.heroImg}>
+                  <CuadroCard
+                    imgUrl={cuadro}
+                    changeImg={(cuadro) => setHeroImage(cuadro)}
+                    heroImage={heroImage}
+                  />
+                </div>
+              ))}
             </div>
           </div>
 
@@ -40,12 +57,28 @@ export default function Hero() {
             {/**Img Desktop */}
             <div className="max-lg:static lg:absolute lg:right-28 lg:top-2 lg:z-0">
               <img
-                src={HeroImg}
+                src={heroImage}
                 alt="cuadros decorativos"
                 className="lg:py-8"
               />
             </div>
           </div>
+        </div>
+
+        {/**cuadros selections mobile */}
+        <div className="flex justify-center items-center bg-amber-50 p-2 gap-2 md:hidden">
+          {cuadros.map((cuadro) => (
+            <div key={cuadro.heroImg}>
+              <CuadroCard
+                imgUrl={cuadro}
+                changeImg={(cuadro) => setHeroImage(cuadro)}
+                heroImage={heroImage}
+              />
+            </div>
+          ))}
+        </div>
+        <div className="md:hidden flex justify-center my-2.5">
+          <Button>Ver productos</Button>
         </div>
       </Container>
     </section>
