@@ -77,7 +77,7 @@ export default function Hero() {
             </div>
           ))}
         </div>
-        <div className="md:hidden flex justify-center my-2.5">
+        <div className="md:hidden flex justify-center my-4">
           <Button>Ver productos</Button>
         </div>
       </Container>

@@ -10,8 +10,8 @@ function HomePage() {
     <div className="bg-white min-h-screen w-full">
       <Header />
       <Hero />
-      {/* <NuevosIngresos />
-      <ParaEllos />
+      <NuevosIngresos />
+      {/* <ParaEllos />
       <Newsletter />
       <Footer /> */}
     </div>
