@@ -1,3 +1,4 @@
+import CategoriasMasBuscadas from "../sections/CategoriasMasBuscadas";
 import Footer from "../sections/Footer";
 import Header from "../sections/Header";
 import Hero from "../sections/Hero";
@@ -11,6 +12,7 @@ function HomePage() {
       <Header />
       <Hero />
       <NuevosIngresos />
+      <CategoriasMasBuscadas />
       {/* <ParaEllos />
       <Newsletter />
       <Footer /> */}

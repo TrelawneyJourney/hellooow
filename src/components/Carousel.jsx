@@ -8,27 +8,29 @@ import CardImg from "../components/CardImg";
 
 export default function Carousel() {
   return (
-    <Swiper
-      modules={[Navigation]}
-      spaceBetween={50}
-      slidesPerView={4}
-      navigation
-      breakpoints={{
-        0: { slidesPerView: 1 },
-        640: { slidesPerView: 2 },
-        1024: { slidesPerView: 4 },
-      }}
-    >
-      {nuevosIngresos.map((p) => (
-        <SwiperSlide>
-          <CardImg
-            imgUrl={p.imgUrl}
-            nombre={p.nombre}
-            precio={p.precio}
-            categoria={p.categoria}
-          />
-        </SwiperSlide>
-      ))}
-    </Swiper>
+    <div className="mb-16">
+      <Swiper
+        modules={[Navigation]}
+        spaceBetween={50}
+        slidesPerView={4}
+        navigation
+        breakpoints={{
+          0: { slidesPerView: 1 },
+          640: { slidesPerView: 2 },
+          1024: { slidesPerView: 4 },
+        }}
+      >
+        {nuevosIngresos.map((p) => (
+          <SwiperSlide>
+            <CardImg
+              imgUrl={p.imgUrl}
+              nombre={p.nombre}
+              precio={p.precio}
+              categoria={p.categoria}
+            />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
   );
 }

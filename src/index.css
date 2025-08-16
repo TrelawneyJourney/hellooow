@@ -39,5 +39,5 @@ body {
 }
 .swiper-button-next::after,
 .swiper-button-prev::after {
-  color: #ff6600;
+  color: oklch(92.4% 0.12 95.746);
 }

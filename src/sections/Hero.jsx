@@ -26,7 +26,7 @@ export default function Hero() {
               </p>
 
               <p className="text-sm lg:text-xl font-semibold tracking-[1.5px]">
-                Comprás con amor, ayudás con el corazón.
+                Comprás con amor, ayudás con el corazón
               </p>
               <p className="text-center lg:text-start font-light text-sm lg:text-lg w-sm lg:w-lg">
                 Cada compra ayuda a un gato rescatado. Hacés que tu casa se vea
