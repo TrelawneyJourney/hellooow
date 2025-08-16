@@ -66,3 +66,5 @@ export const nuevosIngresos = [
     precio: "$8.000",
   },
 ];
+
+export const imgs = [prod1, prod2, prod3, prod4];

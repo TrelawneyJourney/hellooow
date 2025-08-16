@@ -1,7 +1,6 @@
 import Container from "../components/Container";
 import CuadroCard from "../components/CuadroCard";
 import { hero } from "../assets/img";
-import Button from "../components/Button";
 import { cuadros } from "../constants";
 import { useState } from "react";
 
@@ -36,7 +35,7 @@ export default function Hero() {
             </div>
 
             <div className="hidden md:block">
-              <Button>Ver productos</Button>
+              <button className="btn-black">Ver productos</button>
             </div>
 
             {/**cuadros selections */}
@@ -78,7 +77,7 @@ export default function Hero() {
           ))}
         </div>
         <div className="md:hidden flex justify-center my-4">
-          <Button>Ver productos</Button>
+          <button className="btn-black">Ver productos</button>
         </div>
       </Container>
     </section>

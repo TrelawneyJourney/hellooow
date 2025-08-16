@@ -1,5 +1,4 @@
 import Container from "../components/Container";
-import Button from "../components/Button";
 import GatoImg from "../../public/gato.png";
 
 export default function ParaEllos() {
@@ -25,7 +24,7 @@ export default function ParaEllos() {
               </p>
             </div>
             <div className="btn">
-              <Button>Ver productos</Button>
+              <button className="btn-black">Ver productos</button>
             </div>
           </div>
         </div>

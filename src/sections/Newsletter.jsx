@@ -1,4 +1,3 @@
-import Button from "../components/Button";
 import Container from "../components/Container";
 
 export default function Newsletter() {
@@ -17,7 +16,7 @@ export default function Newsletter() {
                 disfrutarlas!
               </p>
               <input type="email" placeholder="Email" />
-              <Button>Enviar</Button>
+              <button className="btn-black">Enviar</button>
             </div>
           </div>
           <div>
