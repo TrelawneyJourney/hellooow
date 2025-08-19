@@ -91,3 +91,12 @@ export const masBuscadas = [
     categoria: "accesorios",
   },
 ];
+export const categorias = [
+  "cocina",
+  "decoración",
+  "accesorios",
+  "baño",
+  "papelería",
+  "mascotas",
+  "indumentaria",
+];
