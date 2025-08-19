@@ -6,7 +6,7 @@ export default function Newsletter() {
     <Container>
       <div className="flex flex-col justify-center items-center lg:items-end gap-5 pb-8">
         <div>
-          <p className="section-titulo text-center lg:text-end">
+          <p className="text-center lg:text-end text-2xl lg:text-4xl font-medium tracking-[10px] uppercase mb-3">
             suscribite al newsletter
           </p>
         </div>
@@ -16,7 +16,7 @@ export default function Newsletter() {
             <p className="text-xl font-bold tracking-[1px]">
               recibí todas las ofertas
             </p>
-            <p className="text-sm lg:text-lg w-sm lg:w-lg">
+            <p className="text-sm lg:text-lg lg:w-lg">
               ¿querés recibir nuestras ofertas? registrate ahora y comenzá a
               disfrutarlas!
             </p>
@@ -29,7 +29,7 @@ export default function Newsletter() {
           </div>
 
           {/**imagen */}
-          <div className="w-fit">
+          <div className="w-fit hidden md:block">
             <img src={gatoNews} alt="gato news" className="w-full" />
           </div>
         </div>

@@ -13,14 +13,14 @@ export default function Header() {
       <div className="w-full py-2.5 bg-amber-100 border-b border-b-neutral-300/50">
         <div className="flex justify-between items-center max-w-[1200px] mx-auto px-4">
           <div className="hidden lg:block md:w-[100px]">
-            <img src={logo} alt="logo" />
+            <img src={logo} alt="logo" className="cursor-pointer" />
           </div>
 
           <nav>
             <ul className="hidden lg:flex justify-center gap-5 text-sm">
-              <li>Inicio</li>
-              <li>Productos</li>
-              <li>Contacto</li>
+              <li className="hover:text-amber-300 cursor-pointer">Inicio</li>
+              <li className="hover:text-amber-300 cursor-pointer">Productos</li>
+              <li className="hover:text-amber-300 cursor-pointer">Contacto</li>
             </ul>
           </nav>
 
@@ -35,11 +35,11 @@ export default function Header() {
 
           {/**Login - Carrito */}
           <div className="hidden lg:flex gap-6">
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center hover:text-amber-300 cursor-pointer">
               <LuUserRound className="text-xl" />
               <p className="text-xs">Mi cuenta</p>
             </div>
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center hover:text-amber-300 cursor-pointer">
               <LuShoppingCart className="text-xl" />
               <p className="text-xs">Mi carrito</p>
             </div>

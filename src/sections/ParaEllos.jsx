@@ -15,15 +15,18 @@ export default function ParaEllos() {
 
             {/**texto derecha */}
             <div className="paraEllos flex flex-col justify-center items-center lg:items-end gap-16">
-              <div className="tags flex flex-col gap-5 text-center lg:text-end">
-                <p className="uppercase text-[45px] tracking-[4.5px]">
+              <div className="tags flex flex-col gap-2 lg:gap-5 text-center lg:text-end">
+                <p className="uppercase text-2xl tracking-[4.5px] md:hidden">
+                  para ellos, con amor
+                </p>
+                <p className="hidden md:block uppercase text-3xl lg:text-[45px] tracking-[4.5px] pt-4">
                   <span className="block">para ellos,</span>
                   <span className="block">con amor</span>
                 </p>
-                <p className="text-xl font-bold tracking-[1px]">
+                <p className="text-base lg:text-xl font-bold tracking-[1px]">
                   Su rincón especial dentro de casa
                 </p>
-                <p className="text-sm lg:text-lg w-sm lg:w-lg">
+                <p className="text-sm lg:text-lg lg:w-sm ">
                   Todo lo que tu gato necesita para sentirse en casa: camas,
                   comederos, juguetes y más.
                 </p>

@@ -14,7 +14,7 @@ import {
   categoria1,
   categoria2,
   categoria3,
-  categoria4,
+  // categoria4,
 } from "../assets/img";
 
 export const cuadros = [
@@ -86,10 +86,10 @@ export const masBuscadas = [
     imgUrl: categoria3,
     categoria: "cocina",
   },
-  {
-    imgUrl: categoria4,
-    categoria: "accesorios",
-  },
+  // {
+  //   imgUrl: categoria4,
+  //   categoria: "accesorios",
+  // },
 ];
 export const categorias = [
   "cocina",

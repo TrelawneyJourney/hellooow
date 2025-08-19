@@ -10,14 +10,20 @@ export default function Footer() {
         <div className="flex flex-col py-5 place-items-stretch">
           <div className="flex justify-between items-center">
             <div className="logo w-[200px]">
-              <img src={logo} alt="" />
+              <img src={logo} alt="logo" className="cursor-pointer" />
             </div>
-            <div className="nav">
+            <div className="nav hidden md:block">
               <nav>
                 <ul className="flex gap-5 text-sm">
-                  <li>Inicio</li>
-                  <li>Productos</li>
-                  <li>Contacto</li>
+                  <li className="hover:text-amber-500 cursor-pointer">
+                    Inicio
+                  </li>
+                  <li className="hover:text-amber-500 cursor-pointer">
+                    Productos
+                  </li>
+                  <li className="hover:text-amber-500 cursor-pointer">
+                    Contacto
+                  </li>
                 </ul>
               </nav>
             </div>
@@ -27,8 +33,8 @@ export default function Footer() {
               © Copyright hellooow - 2025.
             </p>
             <div className="flex gap-3">
-              <FaFacebookSquare className="text-2xl" />
-              <FaInstagram className="text-2xl" />
+              <FaFacebookSquare className="text-2xl cursor-pointer hover:text-amber-500" />
+              <FaInstagram className="text-2xl cursor-pointer hover:text-amber-500" />
             </div>
           </div>
         </div>
