@@ -11,6 +11,10 @@ import {
   prod4,
   prod5,
   prod6,
+  categoria1,
+  categoria2,
+  categoria3,
+  categoria4,
 } from "../assets/img";
 
 export const cuadros = [
@@ -68,3 +72,22 @@ export const nuevosIngresos = [
 ];
 
 export const imgs = [prod1, prod2, prod3, prod4];
+
+export const masBuscadas = [
+  {
+    imgUrl: categoria1,
+    categoria: "baño",
+  },
+  {
+    imgUrl: categoria2,
+    categoria: "decoración",
+  },
+  {
+    imgUrl: categoria3,
+    categoria: "cocina",
+  },
+  {
+    imgUrl: categoria4,
+    categoria: "accesorios",
+  },
+];

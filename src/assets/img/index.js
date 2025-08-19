@@ -10,6 +10,10 @@ import prod3 from "./products/product-3.webp";
 import prod4 from "./products/product-4.webp";
 import prod5 from "./products/product-5.webp";
 import prod6 from "./products/product-6.webp";
+import categoria1 from "./categoria-1.webp";
+import categoria2 from "./categoria-2.webp";
+import categoria3 from "./categoria-3.webp";
+import categoria4 from "./categoria-4.webp";
 
 export {
   hero,
@@ -24,4 +28,8 @@ export {
   prod4,
   prod5,
   prod6,
+  categoria1,
+  categoria2,
+  categoria3,
+  categoria4,
 };
