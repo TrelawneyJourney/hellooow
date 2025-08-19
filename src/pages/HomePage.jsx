@@ -13,9 +13,9 @@ function HomePage() {
       <Hero />
       <NuevosIngresos />
       <CategoriasMasBuscadas />
-      {/* <ParaEllos />
+      <ParaEllos />
       <Newsletter />
-      <Footer /> */}
+      <Footer />
     </div>
   );
 }

@@ -3,32 +3,38 @@ import GatoImg from "../../public/gato.png";
 
 export default function ParaEllos() {
   return (
-    <section className="relative h-[570px] bg-amber-100">
-      <Container>
-        <div className="flex ">
-          <div className="img  border border-amber-700">
-            <img src={GatoImg} alt="" />
-          </div>
-          <div className="paraEllos flex flex-col justify-center items-end gap-16 border border-amber-900">
-            <div className="tags flex flex-col gap-5 border border-red-700 text-end">
-              <p className="uppercase text-[45px] tracking-[4.5px]">
-                <span className="block">para ellos,</span>
-                <span className="block">con amor.</span>
-              </p>
-              <p className="text-xl font-bold tracking-[1px]">
-                Su rincón especial dentro de casa.
-              </p>
-              <p className="text-lg">
-                Todo lo que tu gato necesita para sentirse en casa: camas,
-                comederos, juguetes y más.
-              </p>
+    <section className="h-[850px] md:h-[1100px] lg:h-[600px]">
+      <div className="relative h-[500px] bg-amber-100">
+        <Container>
+          <div className="flex flex-col justify-center lg:flex-row lg:justify-between pt-8">
+            <div className=" flex justify-center lg:justify-start">
+              <div className="img max-lg:static lg:absolute lg:left-28 lg:top-2 lg:z-0">
+                <img src={GatoImg} alt="gato" />
+              </div>
             </div>
-            <div className="btn">
-              <button className="btn-black">Ver productos</button>
+
+            {/**texto derecha */}
+            <div className="paraEllos flex flex-col justify-center items-center lg:items-end gap-16">
+              <div className="tags flex flex-col gap-5 text-center lg:text-end">
+                <p className="uppercase text-[45px] tracking-[4.5px]">
+                  <span className="block">para ellos,</span>
+                  <span className="block">con amor</span>
+                </p>
+                <p className="text-xl font-bold tracking-[1px]">
+                  Su rincón especial dentro de casa
+                </p>
+                <p className="text-sm lg:text-lg w-sm lg:w-lg">
+                  Todo lo que tu gato necesita para sentirse en casa: camas,
+                  comederos, juguetes y más.
+                </p>
+              </div>
+              <div className="btn">
+                <button className="btn-black">Ver productos</button>
+              </div>
             </div>
           </div>
-        </div>
-      </Container>
+        </Container>
+      </div>
     </section>
   );
 }
