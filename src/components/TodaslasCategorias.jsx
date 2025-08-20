@@ -12,9 +12,7 @@ export default function TodaslasCategorias() {
               slides={6}
               items={categorias}
               renderItem={(c) => (
-                <li className="uppercase text-center hover:text-amber-300 cursor-pointer">
-                  {c}
-                </li>
+                <li className="uppercase text-center links">{c}</li>
               )}
             />
           </ul>

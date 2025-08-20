@@ -17,6 +17,21 @@ import {
   // categoria4,
 } from "../assets/img";
 
+export const navItems = [
+  {
+    item: "Inicio",
+    to: "/",
+  },
+  {
+    item: "Productos",
+    to: "/products",
+  },
+  {
+    item: "Contacto",
+    to: "/contact",
+  },
+];
+
 export const cuadros = [
   {
     cuadro: cuadro1,

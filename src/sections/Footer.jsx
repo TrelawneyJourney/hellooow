@@ -2,6 +2,7 @@ import Container from "../components/Container";
 import logo from "../../public/logo.svg";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
+import Nav from "../components/Nav";
 
 export default function Footer() {
   return (
@@ -13,19 +14,7 @@ export default function Footer() {
               <img src={logo} alt="logo" className="cursor-pointer" />
             </div>
             <div className="nav hidden md:block">
-              <nav>
-                <ul className="flex gap-5 text-sm">
-                  <li className="hover:text-amber-500 cursor-pointer">
-                    Inicio
-                  </li>
-                  <li className="hover:text-amber-500 cursor-pointer">
-                    Productos
-                  </li>
-                  <li className="hover:text-amber-500 cursor-pointer">
-                    Contacto
-                  </li>
-                </ul>
-              </nav>
+              <Nav />
             </div>
           </div>
           <div className="flex justify-between items-end">
@@ -33,8 +22,8 @@ export default function Footer() {
               © Copyright hellooow - 2025.
             </p>
             <div className="flex gap-3">
-              <FaFacebookSquare className="text-2xl cursor-pointer hover:text-amber-500" />
-              <FaInstagram className="text-2xl cursor-pointer hover:text-amber-500" />
+              <FaFacebookSquare className="text-2xl cursor-pointer links" />
+              <FaInstagram className="text-2xl cursor-pointer links" />
             </div>
           </div>
         </div>

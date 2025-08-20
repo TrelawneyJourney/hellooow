@@ -36,6 +36,9 @@ body {
   .section-titulo {
     @apply text-2xl font-medium tracking-[10px] uppercase;
   }
+  .links {
+    @apply hover:text-amber-500 cursor-pointer;
+  }
 }
 .swiper-button-next::after,
 .swiper-button-prev::after {

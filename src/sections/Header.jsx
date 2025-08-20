@@ -1,9 +1,12 @@
+import { Link } from "react-router-dom";
 import logo from "../../public/logo.svg";
-import { LuUserRound } from "react-icons/lu";
-import { LuShoppingCart } from "react-icons/lu";
-import { LuAlignJustify } from "react-icons/lu";
+import { LuShoppingCart, LuAlignJustify } from "react-icons/lu";
+import Nav from "../components/Nav";
+import LoginCarrito from "../components/LoginCarrito";
+import { useState } from "react";
 
 export default function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
     <div className="">
       <div className="py-2.5 text-center text-sm">
@@ -12,38 +15,28 @@ export default function Header() {
 
       <div className="w-full py-2.5 bg-amber-100 border-b border-b-neutral-300/50">
         <div className="flex justify-between items-center max-w-[1200px] mx-auto px-4">
+          {/**logo */}
           <div className="hidden lg:block md:w-[100px]">
-            <img src={logo} alt="logo" className="cursor-pointer" />
+            <Link to="/">
+              <img src={logo} alt="logo" className="cursor-pointer" />
+            </Link>
           </div>
 
-          <nav>
-            <ul className="hidden lg:flex justify-center gap-5 text-sm">
-              <li className="hover:text-amber-300 cursor-pointer">Inicio</li>
-              <li className="hover:text-amber-300 cursor-pointer">Productos</li>
-              <li className="hover:text-amber-300 cursor-pointer">Contacto</li>
-            </ul>
-          </nav>
+          <Nav />
 
           {/**Hamburger menu */}
           <div className="hidden max-lg:flex justify-between items-center  mx-auto w-full">
             <LuAlignJustify className="text-xl" />
             <div className="w-[150px]">
-              <img src={logo} alt="logo" />
+              <Link>
+                <img src={logo} alt="logo" />
+              </Link>
             </div>
             <LuShoppingCart className="text-xl" />
           </div>
 
           {/**Login - Carrito */}
-          <div className="hidden lg:flex gap-6">
-            <div className="flex flex-col items-center hover:text-amber-300 cursor-pointer">
-              <LuUserRound className="text-xl" />
-              <p className="text-xs">Mi cuenta</p>
-            </div>
-            <div className="flex flex-col items-center hover:text-amber-300 cursor-pointer">
-              <LuShoppingCart className="text-xl" />
-              <p className="text-xs">Mi carrito</p>
-            </div>
-          </div>
+          <LoginCarrito />
         </div>
       </div>
     </div>
