@@ -3,10 +3,26 @@ import logo from "../../public/logo.svg";
 import { LuShoppingCart, LuAlignJustify, LuX } from "react-icons/lu";
 import Nav from "../components/Nav";
 import LoginCarrito from "../components/LoginCarrito";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const menuRef = useRef();
+
+  useEffect(() => {
+    const handleClickOut = (e) => {
+      if (menuRef.current && !menuRef.current.contains(e.target)) {
+        setMenuOpen(false);
+      }
+    };
+    if (menuOpen) {
+      document.addEventListener("mousedown", handleClickOut);
+    }
+    return () => {
+      document.removeEventListener("mousedown", handleClickOut);
+    };
+  }, [menuOpen]);
+
   return (
     <div className="">
       <div className="py-2.5 text-center text-sm">
@@ -48,7 +64,10 @@ export default function Header() {
           <LoginCarrito />
 
           {menuOpen && (
-            <div className="absolute top-full left-0 w-full bg-amber-100 shadow-md lg:hidden px-4 z-40">
+            <div
+              className="absolute top-full left-0 w-full bg-amber-100 shadow-md lg:hidden px-4 z-40"
+              ref={menuRef}
+            >
               <div className="flex flex-col items-center gap-4 py-4">
                 <Nav mobile />
               </div>
