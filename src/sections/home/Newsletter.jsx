@@ -1,5 +1,5 @@
-import Container from "../components/Container";
-import gatoNews from "../assets/img/news.webp";
+import Container from "../../components/Container";
+import gatoNews from "../../assets/img/news.webp";
 
 export default function Newsletter() {
   return (

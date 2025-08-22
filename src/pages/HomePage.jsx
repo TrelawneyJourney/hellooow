@@ -1,8 +1,8 @@
-import CategoriasMasBuscadas from "../sections/CategoriasMasBuscadas";
-import Hero from "../sections/Hero";
-import Newsletter from "../sections/Newsletter";
-import NuevosIngresos from "../sections/NuevosIngresos";
-import ParaEllos from "../sections/ParaEllos";
+import CategoriasMasBuscadas from "../sections/home/CategoriasMasBuscadas";
+import Hero from "../sections/home/Hero";
+import Newsletter from "../sections/home/Newsletter";
+import NuevosIngresos from "../sections/home/NuevosIngresos";
+import ParaEllos from "../sections/home/ParaEllos";
 
 function HomePage() {
   return (

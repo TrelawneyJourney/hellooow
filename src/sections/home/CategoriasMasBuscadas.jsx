@@ -1,8 +1,8 @@
-import CardCat from "../components/CardCat";
-import Carousel from "../components/Carousel";
-import Container from "../components/Container";
-import TodaslasCategorias from "../components/TodaslasCategorias";
-import { masBuscadas } from "../constants";
+import CardCat from "../../components/CardCat";
+import Carousel from "../../components/Carousel";
+import Container from "../../components/Container";
+import TodaslasCategorias from "../../components/TodaslasCategorias";
+import { masBuscadas } from "../../constants";
 
 export default function CategoriasMasBuscadas() {
   return (

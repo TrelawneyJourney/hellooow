@@ -6,7 +6,7 @@ export default function CardCat({ imgUrl, categoria }) {
         class="absolute inset-0 flex justify-center items-center bg-amber-200 opacity-0 transition-opacity duration-300 ease-in group-hover:opacity-80 active:opacity-80 focus:opacity-80 cursor-pointer"
         tabIndex="0"
       >
-        <p class="uppercase font-bold">{categoria}</p>
+        <p className="uppercase font-bold">{categoria}</p>
       </div>
     </div>
   );

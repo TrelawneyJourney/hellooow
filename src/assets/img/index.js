@@ -10,6 +10,17 @@ import prod3 from "./products/product-3.webp";
 import prod4 from "./products/product-4.webp";
 import prod5 from "./products/product-5.webp";
 import prod6 from "./products/product-6.webp";
+import prod7 from "./products/product-7.webp";
+import prod8 from "./products/product-8.webp";
+import prod9 from "./products/product-9.webp";
+import prod10 from "./products/product-10.webp";
+import prod11 from "./products/product-11.webp";
+import prod12 from "./products/product-12.webp";
+import prod13 from "./products/product-13.webp";
+import prod14 from "./products/product-14.webp";
+import prod15 from "./products/product-15.webp";
+import prod16 from "./products/product-16.webp";
+
 import categoria1 from "./categoria-1.webp";
 import categoria2 from "./categoria-2.webp";
 import categoria3 from "./categoria-3.webp";
@@ -28,6 +39,16 @@ export {
   prod4,
   prod5,
   prod6,
+  prod7,
+  prod8,
+  prod9,
+  prod10,
+  prod11,
+  prod12,
+  prod13,
+  prod14,
+  prod15,
+  prod16,
   categoria1,
   categoria2,
   categoria3,

@@ -1,8 +1,8 @@
-import Carousel from "../components/Carousel";
-import Container from "../components/Container";
-import CardImg from "../components/CardImg";
+import Carousel from "../../components/Carousel";
+import Container from "../../components/Container";
+import CardImg from "../../components/CardImg";
 import { LuChevronRight } from "react-icons/lu";
-import { nuevosIngresos } from "../constants/index";
+import { nuevosIngresos } from "../../constants/index";
 export default function NuevosIngresos() {
   return (
     <Container>

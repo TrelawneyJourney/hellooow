@@ -1,8 +1,9 @@
-import Container from "../components/Container";
-import CuadroCard from "../components/CuadroCard";
-import { hero } from "../assets/img";
-import { cuadros } from "../constants";
+import Container from "../../components/Container";
+import CuadroCard from "../../components/CuadroCard";
+import { hero } from "../../assets/img";
+import { cuadros } from "../../constants";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
   const [heroImage, setHeroImage] = useState(hero);
@@ -35,7 +36,10 @@ export default function Hero() {
             </div>
 
             <div className="hidden md:block">
-              <button className="btn-black">Ver productos</button>
+              <Link to="/products" className="btn-black">
+                Ver productos
+              </Link>
+              {/* <button className="btn-black">Ver productos</button> */}
             </div>
 
             {/**cuadros selections */}
@@ -77,7 +81,9 @@ export default function Hero() {
           ))}
         </div>
         <div className="md:hidden flex justify-center my-4">
-          <button className="btn-black">Ver productos</button>
+          <Link to="/products" className="btn-black">
+            Ver productos
+          </Link>
         </div>
       </Container>
     </section>

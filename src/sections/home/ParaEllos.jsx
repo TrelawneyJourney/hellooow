@@ -1,5 +1,5 @@
-import Container from "../components/Container";
-import GatoImg from "../../public/gato.png";
+import Container from "../../components/Container";
+import GatoImg from "../../assets/img/gato.png";
 
 export default function ParaEllos() {
   return (
