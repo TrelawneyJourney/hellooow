@@ -14,18 +14,19 @@ export default function SideBarFilters({
     }
   };
   return (
-    <aside className="w-64 bg-neutral-50 rounded-xl shadow-sm">
-      <h3>Filtrar por</h3>
+    <aside className="w-64 p-4 shadow-xl">
+      <h3 className="text-xl py-2">Filtrar por</h3>
 
       {/**categorias */}
-      <div>
-        <p className="">Categoría</p>
+      <div className="px-5">
+        <p className="pb-1">Categoría</p>
         {categorias.map((cat) => (
-          <label key={cat} className="flex items-center gap-2">
+          <label key={cat} className="flex items-center gap-2 px-3.5">
             <input
               type="checkbox"
               checked={selectedCategorias.includes(cat)}
-              onChange={() => handleCambioCategoria}
+              onChange={() => handleCambioCategoria(cat)}
+              value={cat}
             />
             {cat}
           </label>
@@ -33,7 +34,7 @@ export default function SideBarFilters({
       </div>
 
       {/**precio */}
-      <div className="mt-4">
+      <div className="mt-4 px-5">
         <p className="">Precio</p>
         <div className="flex gap-2">
           <input

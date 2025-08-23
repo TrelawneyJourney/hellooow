@@ -25,7 +25,7 @@ export default function Header() {
 
   return (
     <div className="">
-      <div className="py-2.5 text-center text-sm">
+      <div className="py-2.5 text-center text-sm bg-amber-50">
         <p>🚚 Envío GRATIS en compras superiores a $90.000</p>
       </div>
 

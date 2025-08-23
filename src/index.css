@@ -28,10 +28,10 @@ body {
 
 @layer utilities {
   .btn-black {
-    @apply bg-neutral-800 text-white px-6 py-3 w-[280px] hover:bg-neutral-950 transition-colors cursor-pointer;
+    @apply bg-neutral-800 text-white px-6 py-3 w-[280px] hover:bg-neutral-950 active:bg-neutral-950 focus:bg-neutral-950 transition-colors cursor-pointer;
   }
   .btn-gray {
-    @apply w-full py-2 bg-white text-neutral-600 border border-neutral-600/50 hover:bg-neutral-600 hover:text-white transition-colors cursor-pointer;
+    @apply w-full py-2 bg-white text-neutral-600 border border-neutral-600/50 hover:bg-neutral-600 active:bg-neutral-600 focus:bg-neutral-600 hover:text-white transition-colors cursor-pointer;
   }
   .section-titulo {
     @apply text-2xl font-medium tracking-[10px] uppercase;
