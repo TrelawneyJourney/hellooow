@@ -62,37 +62,37 @@ export const nuevosIngresos = [
     imgUrl: prod1,
     categoria: "decoración",
     nombre: "jarrón gato",
-    precio: "$14.000",
+    precio: 14000,
   },
   {
     imgUrl: prod2,
     categoria: "decoración",
     nombre: "alfombra gato",
-    precio: "$25.000",
+    precio: 25000,
   },
   {
     imgUrl: prod3,
     categoria: "baño",
     nombre: "toalla de mano gato",
-    precio: "$10.000",
+    precio: 14000,
   },
   {
     imgUrl: prod4,
     categoria: "decoración",
     nombre: "jarrón garra",
-    precio: "$10.000",
+    precio: 10500,
   },
   {
     imgUrl: prod5,
     categoria: "decoración",
     nombre: "cuadro gato",
-    precio: "$16.000",
+    precio: 16000,
   },
   {
     imgUrl: prod6,
     categoria: "baño",
     nombre: "dispenser gato",
-    precio: "$8.000",
+    precio: 8000,
   },
 ];
 
@@ -133,7 +133,7 @@ export const productos = [
     descripcion:
       "Conjunto de 4 figuras de gato coleccionables - Gatos de dibujos animados de resina de piedra, versátiles para varios tipos de habitaciones, decoración de interiores y jardines",
     categoria: "decoración",
-    precio: 22.286,
+    precio: 22286,
     imgUrl: prod7,
   },
   {
@@ -142,7 +142,7 @@ export const productos = [
     descripcion:
       "Conjunto de 3 Pósteres de Lienzo Sin Marco, Pintura al Óleo de Gato Negro y Planta, Arte de Pared Bohemio de Hojas Verdes, Decoración de Pared de Pintura Animal Minimalista, Impresión de Póster Estético, Adecuado para Oficinas en Casa y Salones",
     categoria: "decoración",
-    precio: 13.012,
+    precio: 13012,
     imgUrl: prod8,
   },
   {
@@ -151,7 +151,7 @@ export const productos = [
     descripcion:
       "Mantel de Poliéster con Temática de Gatos Whisker Wonders – Diseño de Gatitos Adorables y Huellas de Patas, Perfecto para Cocina, Comedor, Patio, Picnic | Borde Redondeado en Relieve, Regalo Ideal para Amantes de los Gatos, Regalos para Amantes de los Gatos",
     categoria: "decoración",
-    precio: 23.815,
+    precio: 23815,
     imgUrl: prod9,
   },
   {
@@ -160,7 +160,7 @@ export const productos = [
     descripcion:
       "Juego de 4 Cucharas de Té de Acero Inoxidable con Forma de Garra de Gato - Cucharas Lindas para Café y Postres, Adecuadas para Uso en Casa y Cocina",
     categoria: "cocina",
-    precio: 9.059,
+    precio: 9059,
     imgUrl: prod10,
   },
   {
@@ -169,7 +169,7 @@ export const productos = [
     descripcion:
       "Forma para Galletas de Gatito en 3D, Molde de Acero Inoxidable para Bizcochos, Moldes para Postres y Chocolates, Adecuado para Cocina Doméstica, Restaurante, Fiestas, Accesorios de Cocina, Herramientas de Repostería",
     categoria: "cocina",
-    precio: 7.129,
+    precio: 7129,
     imgUrl: prod11,
   },
   {
@@ -178,7 +178,7 @@ export const productos = [
     descripcion:
       "1pc Taza de Cerámica de Diseño Creativo, Taza de Agua de Pareja de Garra de Gato de Alto Valor, Taza de Regalo para Mejor Amigo, Taza de Agua Diaria para el Hogar, Taza de Café",
     categoria: "cocina",
-    precio: 25.507,
+    precio: 25507,
     imgUrl: prod12,
   },
   {
@@ -187,7 +187,7 @@ export const productos = [
     descripcion:
       "Collar de cadena de aleación con diseño de gato de 3 piezas con aretes de perlas simuladas para adolescentes, regalo de fiesta de moda",
     categoria: "accesorios",
-    precio: 3.343,
+    precio: 3343,
     imgUrl: prod13,
   },
   {
@@ -196,7 +196,7 @@ export const productos = [
     descripcion:
       "Anillo Elegante de Acero Inoxidable con Gato de la Suerte – Chic y Lindo, Perfecto para Uso Diario o Fiestas, Ideal para Cumpleaños, Aniversario, Halloween, Regalo de Navidad, Regalos para Amantes de los Gatos",
     categoria: "accesorios",
-    precio: 2.386,
+    precio: 2386,
     imgUrl: prod14,
   },
   {
@@ -205,7 +205,7 @@ export const productos = [
     descripcion:
       "Pin de Esmalte Adorable Gatito Pescando – Diseño de Gato de Dibujos Animados con Pez, Broche Chapado en Oro para Mochilas, Chaquetas y Accesorios, Perfecto para Atuendo Casual o Vacaciones, Decoración de Bolsa, Estilo Pastoral, Artesanía Encantadora",
     categoria: "accesorios",
-    precio: 2.059,
+    precio: 2059,
     imgUrl: prod15,
   },
   {
@@ -214,7 +214,7 @@ export const productos = [
     descripcion:
       "1 cabezal de ducha portátil presurizado, diseño de pata de gato, hermoso y moderno, cabezal de ducha con filtro de masaje ajustable en 3 modos, adecuado para baño, montaje en pared y colgante, material plástico, regalo ideal para amantes de los gatos",
     categoria: "baño",
-    precio: 26.198,
+    precio: 26198,
     imgUrl: prod16,
   },
 ];

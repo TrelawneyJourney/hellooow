@@ -41,7 +41,10 @@ export default function SideBarFilters({
             type="number"
             value={precioRango.min}
             onChange={(e) =>
-              setPrecioRango({ ...precioRango, min: +e.target.value })
+              setPrecioRango({
+                ...precioRango,
+                min: +e.target.value === "" ? 0 : parseInt(e.target.value),
+              })
             }
             className="border w-20 p-1 rounded"
             placeholder="de"
@@ -50,7 +53,13 @@ export default function SideBarFilters({
             type="number"
             value={precioRango.max}
             onChange={(e) =>
-              setPrecioRango({ ...precioRango, max: +e.target.value })
+              setPrecioRango({
+                ...precioRango,
+                max:
+                  +e.target.value === ""
+                    ? 200000
+                    : parseInt(e.target.value, 10),
+              })
             }
             className="border w-20 p-1 rounded"
             placeholder="hasta"
