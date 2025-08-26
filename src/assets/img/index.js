@@ -20,6 +20,20 @@ import prod13 from "./products/product-13.webp";
 import prod14 from "./products/product-14.webp";
 import prod15 from "./products/product-15.webp";
 import prod16 from "./products/product-16.webp";
+import prod17 from "./products/product-17.webp";
+import prod18 from "./products/product-18.webp";
+import prod19 from "./products/product-19.webp";
+import prod20 from "./products/product-20.webp";
+import prod21 from "./products/product-21.webp";
+import prod22 from "./products/product-22.webp";
+import prod23 from "./products/product-23.webp";
+import prod24 from "./products/product-24.webp";
+import prod25 from "./products/product-25.webp";
+import prod26 from "./products/product-26.webp";
+import prod27 from "./products/product-27.webp";
+import prod28 from "./products/product-28.webp";
+import prod29 from "./products/product-29.webp";
+import prod30 from "./products/product-30.webp";
 
 import categoria1 from "./categoria-1.webp";
 import categoria2 from "./categoria-2.webp";
@@ -49,6 +63,20 @@ export {
   prod14,
   prod15,
   prod16,
+  prod17,
+  prod18,
+  prod19,
+  prod20,
+  prod21,
+  prod22,
+  prod23,
+  prod24,
+  prod25,
+  prod26,
+  prod27,
+  prod28,
+  prod29,
+  prod30,
   categoria1,
   categoria2,
   categoria3,

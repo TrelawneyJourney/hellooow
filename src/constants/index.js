@@ -21,6 +21,20 @@ import {
   prod14,
   prod15,
   prod16,
+  prod17,
+  prod18,
+  prod19,
+  prod20,
+  prod21,
+  prod22,
+  prod23,
+  prod24,
+  prod25,
+  prod26,
+  prod27,
+  prod28,
+  prod29,
+  prod30,
   categoria1,
   categoria2,
   categoria3,
@@ -216,5 +230,131 @@ export const productos = [
     categoria: "baño",
     precio: 26198,
     imgUrl: prod16,
+  },
+  {
+    id: 11,
+    nombre: "funda de sofá de peluche de gato",
+    descripcion:
+      "1pc Funda de Sofá de Peluche de Gato Súper Linda, Funda de Bolsa de Semillas para Sofá Tatami, Funda de Asiento para Silla de Dormitorio y Balcón, Decoración del Hogar para Sala de Estar (Solo Funda Sin Relleno)",
+    categoria: "decoración",
+    precio: 112292,
+    imgUrl: prod17,
+  },
+  {
+    id: 12,
+    nombre: "portacepillos de gato siamés",
+    descripcion:
+      "Portacepillos para Gato Siamés, Diseño de Cerámica – Organizador Único para Baño con Dispensadores de Champú, Gel de Ducha y Jabón y Caja de Almacenamiento de Pasta Dental",
+    categoria: "baño",
+    precio: 32849,
+    imgUrl: prod18,
+  },
+  {
+    id: 13,
+    nombre: "jabonera de gato",
+    descripcion:
+      "1 pieza, plato de jabón con diseño de gato de dibujos animados, soporte de drenaje, organizador de baño de plástico duradero, diseño de gato encantador, no necesita batería, regalo perfecto para el cumpleaños de 'Corazón' o 'Amigo', decoración de baño, diseño divertido, acabado de superficie lisa",
+    categoria: "baño",
+    precio: 14758,
+    imgUrl: prod19,
+  },
+  {
+    id: 14,
+    nombre: "cuaderno gato",
+    descripcion:
+      "Cuadernos con patrones de gatos lindos, con 80 páginas con líneas, diseñados en un estilo humorístico de gato. La cubierta de gato adorable es compacta y fácil de llevar, lo que la hace perfecta para notas diarias y suministros de oficina, así como premios de exámenes escolares",
+    categoria: "papelería",
+    precio: 14024,
+    imgUrl: prod20,
+  },
+  {
+    id: 15,
+    nombre: "Cartuchera gato negro",
+    descripcion:
+      "1 estuche de lápices de gato negro 3D lindo - Gran capacidad, tela duradera, diseño de dibujos animados divertido con ojos naranjas y marcas de garras, perfecto para la escuela, el trabajo, el almacenamiento de papelería - Regalo para amantes del arte de los gatos",
+    categoria: "papelería",
+    precio: 9333,
+    imgUrl: prod21,
+  },
+  {
+    id: 16,
+    nombre: "set de gato",
+    descripcion:
+      "Juego de Papelería de 4 Piezas con Diseño de Pata de Gato - Portabolígrafos de PVC Transparente, Borrador en Forma de Corazón, Sacapuntas Manual & Regla en Rosa y Blanco - Regalo Perfecto para Estudiantes, Accesorios para Gatos",
+    categoria: "papelería",
+    precio: 11310,
+    imgUrl: prod22,
+  },
+  {
+    id: 17,
+    nombre: "cama para gatos",
+    descripcion:
+      "Cama para gatos, nido para gatos de interior, agujero para gatos de interior, agujero para cama de gatos, nido para gatos con capucha cómoda y cojín suave, desmontable, lavable, cálido y versátil para todas las estaciones",
+    categoria: "mascotas",
+    precio: 24262,
+    imgUrl: prod23,
+  },
+  {
+    id: 18,
+    nombre: "taza gatos",
+    descripcion:
+      "Taza de Gato Dibujos Animados Linda con Tapa, Cuchara, Posavasos y Infusor de Té - Caja de Regalo Creativa para Agradecimiento al Maestro, Hogar y Viaje - Vaso de Cerámica Engrosada para Cepillo de Dientes y Enjuague Bucal, Apto para Lavavajillas y Microondas, Ideal para Amantes de los Gatos, Cumpleaños, Regalo de Navidad",
+    categoria: "cocina",
+    precio: 13325,
+    imgUrl: prod24,
+  },
+  {
+    id: 19,
+    nombre: "espatulas garra colores",
+    descripcion:
+      " 1 WhimsyCat 4, 72 pulgadas Mini Gato de Dibujos Animados Pala de Comida, Adecuada para Asar, Sandwiches, Hornear, Cubos de Hielo y Azúcar - Lindos Clips de Utensilios de Cocina para Cocinar y Manejar Ensaladas",
+    categoria: "cocina",
+    precio: 3986,
+    imgUrl: prod25,
+  },
+  {
+    id: 20,
+    nombre: "tabla rascadora autoadhesiva",
+    descripcion:
+      "Tabla Rascadora Autoadhesiva para Gatos, Material de Poliéster, Alfombra de Escalada con Dibujos Animados Lindo para Gatos, Reemplazo de Muebles y Paredes, Pegatina Decorativa para Afilar Garras de Gatitos",
+    categoria: "mascotas",
+    precio: 12906,
+    imgUrl: prod26,
+  },
+  {
+    id: 21,
+    nombre: "set de marcadores",
+    descripcion:
+      "Serie Morandi de 6 resaltadores, diseño de pata de gato lindo, no impermeable, punta ancha, lavable, para dibujar, pintar y colorear en superficies de plástico y cartón.",
+    categoria: "papelería",
+    precio: 9752,
+    imgUrl: prod27,
+  },
+  {
+    id: 22,
+    nombre: "toalla de mano",
+    descripcion:
+      "Toalla de mano bordada de lana de coral ultra suave para gatos - Diseño de gato de dibujos animados lindo, absorbente y colgante para cocina y baño, poliéster, solo lavado a mano, toalla de baño | Diseño juguetón | Textura suave, decoración de gatos",
+    categoria: "baño",
+    precio: 7604,
+    imgUrl: prod28,
+  },
+  {
+    id: 23,
+    nombre: "caja de pañuelos",
+    descripcion:
+      "CAJA DE PAÑUELOS LATTBY - Diseño de Gato Lindo - Porta Pañuelos Decorativo para Cocina, Sala o Baño - Base Estable - Regalo Perfecto para Amantes de los Gatos - Organizador Fácil de Limpiar, Decoración Hogareña con Diseños de Gato Blanco y , Accesorios Encantadores y Divertidos",
+    categoria: "decoración",
+    precio: 20940,
+    imgUrl: prod29,
+  },
+  {
+    id: 24,
+    nombre: "Almohadón redondo",
+    descripcion:
+      "Cojín de asiento con diseño de gato lindo - Suave, lavable, con cierre de cremallera para sillas de casa, oficina y respaldo de coche, diseño de gato juguetón en rojo, blanco y gris, asiento acogedor | Cojín decorativo | Forro de fibra de poliéster",
+    categoria: "decoración",
+    precio: 23000,
+    imgUrl: prod30,
   },
 ];

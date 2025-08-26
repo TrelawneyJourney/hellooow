@@ -2,9 +2,9 @@ import { useState } from "react";
 import CardImg from "../../components/CardImg";
 
 export default function ProductsGrid({ products }) {
-  const [mostrarProd, setMostrarProd] = useState(3);
+  const [mostrarProd, setMostrarProd] = useState(10);
   const cargarMas = () => {
-    setMostrarProd((prev) => prev + 3);
+    setMostrarProd((prev) => prev + 10);
   };
 
   return (
