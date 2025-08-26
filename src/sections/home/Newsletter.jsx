@@ -1,7 +1,27 @@
 import Container from "../../components/Container";
 import gatoNews from "../../assets/img/news.webp";
+import { useState } from "react";
 
 export default function Newsletter() {
+  const [email, setEmail] = useState("");
+  const [error, setError] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!email) {
+      setError("El email es obligatorio");
+      return;
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      setError("Por favor, ingrese un email válido");
+      return;
+    }
+    setError("");
+    localStorage.setItem("newsletterEmail", email);
+    setEmail("");
+  };
   return (
     <Container>
       <div className="flex flex-col justify-center items-center lg:items-end gap-5 pb-8">
@@ -20,12 +40,29 @@ export default function Newsletter() {
               ¿querés recibir nuestras ofertas? registrate ahora y comenzá a
               disfrutarlas!
             </p>
-            <input
-              type="email"
-              placeholder="Email"
-              className="border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
-            />
-            <button className="btn-black">Enviar</button>
+            <form
+              onSubmit={handleSubmit}
+              className="flex flex-col items-end gap-2 w-full max-w-sm"
+            >
+              <label htmlFor="email" className="sr-only">
+                Email
+              </label>
+              <input
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
+                autoComplete="email"
+                placeholder="Email"
+                className={`border ${
+                  error ? "border-red-500" : "border-gray-300"
+                }  text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5`}
+              />
+              {error && <p className="text-red-500 text-sm">{error}</p>}
+              <button type="submit" className="btn-black">
+                Enviar
+              </button>
+            </form>
           </div>
 
           {/**imagen */}
