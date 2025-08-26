@@ -3,10 +3,12 @@ import CuadroCard from "../../components/CuadroCard";
 import { hero } from "../../assets/img";
 import { cuadros } from "../../constants";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export default function Hero() {
+  const navigate = useNavigate();
   const [heroImage, setHeroImage] = useState(hero);
+
   return (
     <section className="relative h-[570px] bg-amber-100">
       <Container>
@@ -36,9 +38,12 @@ export default function Hero() {
             </div>
 
             <div className="hidden md:block">
-              <Link to="/products" className="btn-black">
+              <button
+                onClick={() => navigate("products")}
+                className="btn-black"
+              >
                 Ver productos
-              </Link>
+              </button>
               {/* <button className="btn-black">Ver productos</button> */}
             </div>
 
@@ -81,9 +86,9 @@ export default function Hero() {
           ))}
         </div>
         <div className="md:hidden flex justify-center my-4">
-          <Link to="/products" className="btn-black">
+          <button onClick={() => navigate("/products")} className="btn-black">
             Ver productos
-          </Link>
+          </button>
         </div>
       </Container>
     </section>

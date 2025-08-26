@@ -1,7 +1,10 @@
 import Container from "../../components/Container";
 import GatoImg from "../../assets/img/gato.png";
+import { useNavigate } from "react-router-dom";
 
 export default function ParaEllos() {
+  const navigate = useNavigate();
+
   return (
     <section className="h-[850px] md:h-[1100px] lg:h-[600px]">
       <div className="relative h-[500px] bg-amber-100">
@@ -32,7 +35,12 @@ export default function ParaEllos() {
                 </p>
               </div>
               <div className="btn">
-                <button className="btn-black">Ver productos</button>
+                <button
+                  className="btn-black"
+                  onClick={() => navigate("/products/mascotas")}
+                >
+                  Ver productos
+                </button>
               </div>
             </div>
           </div>

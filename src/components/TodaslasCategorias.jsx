@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { categorias } from "../constants";
 import Carousel from "./Carousel";
 import Container from "./Container";
@@ -12,7 +13,12 @@ export default function TodaslasCategorias() {
               slides={6}
               items={categorias}
               renderItem={(c) => (
-                <li className="uppercase text-center links">{c}</li>
+                <Link
+                  to={`/products/${c}`}
+                  className="uppercase text-center links"
+                >
+                  {c}
+                </Link>
               )}
             />
           </ul>

@@ -3,15 +3,19 @@ import Container from "../../components/Container";
 import CardImg from "../../components/CardImg";
 import { LuChevronRight } from "react-icons/lu";
 import { nuevosIngresos } from "../../constants/index";
+import { Link } from "react-router-dom";
 export default function NuevosIngresos() {
   return (
     <Container>
       <div className="flex flex-col mt-[24rem] md:mt-[30rem] text-center lg:text-start  lg:mt-52 mb-10">
         <p className="section-titulo mb-1">nuevos ingresos</p>
-        <div className="flex justify-center lg:justify-end items-center text-gray-400 hover:text-gray-600">
-          <p className="cursor-pointer">ver todos los productos</p>
+        <Link
+          to="/products"
+          className="flex justify-center lg:justify-end items-center text-gray-400 hover:text-gray-600"
+        >
+          <p>ver todos los productos</p>
           <LuChevronRight />
-        </div>
+        </Link>
       </div>
       <Carousel
         slides={4}

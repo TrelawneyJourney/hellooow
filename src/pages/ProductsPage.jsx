@@ -5,13 +5,17 @@ import Container from "../components/Container";
 import SortBar from "../components/SortBar";
 import ProductsGrid from "../sections/products/ProductsGrid";
 import { TiDelete } from "react-icons/ti";
+import { useParams } from "react-router-dom";
 
 export default function ProductsPage() {
   const [selectedCategorias, setSelectedCategorias] = useState([]);
   const [precioRango, setPrecioRango] = useState({ min: 0, max: 200000 });
   const [sortOrder, setSortOrder] = useState("asc");
 
+  const { categoria } = useParams();
+
   const filterProducts = productos
+    .filter((p) => (categoria ? p.categoria === categoria : true))
     .filter((p) =>
       selectedCategorias.length > 0
         ? selectedCategorias.includes(p.categoria)
