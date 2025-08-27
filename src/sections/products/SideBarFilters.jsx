@@ -1,4 +1,7 @@
-import { categorias } from "../../constants";
+import { useState, useRef } from "react";
+import Filtros from "../../components/Filtros";
+import { LuX } from "react-icons/lu";
+import { useClickOut } from "../../hooks/useClickOut";
 
 export default function SideBarFilters({
   selectedCategorias,
@@ -13,59 +16,51 @@ export default function SideBarFilters({
       setSelectedCategorias([...selectedCategorias, cat]);
     }
   };
-  return (
-    <aside className="w-64 p-4 shadow-xl">
-      <h3 className="text-xl py-2">Filtrar por</h3>
 
-      {/**categorias */}
-      <div className="px-5">
-        <p className="pb-1">Categoría</p>
-        {categorias.map((cat) => (
-          <label key={cat} className="flex items-center gap-2 px-3.5">
-            <input
-              type="checkbox"
-              checked={selectedCategorias.includes(cat)}
-              onChange={() => handleCambioCategoria(cat)}
-              value={cat}
-            />
-            {cat}
-          </label>
-        ))}
+  const [filterOpen, setFilterOpen] = useState(false);
+
+  const filterRef = useRef();
+  useClickOut(filterRef, () => setFilterOpen(false));
+
+  const toggleFilter = () => {
+    setFilterOpen((prev) => !prev);
+  };
+
+  return (
+    <div className="">
+      {/**mobile */}
+      <div className="hidden max-lg:flex justify-start items-end text-xs">
+        <button
+          onClick={toggleFilter}
+          className="border border-amber-200 px-4 py-2"
+        >
+          {filterOpen ? <LuX className="text-xs" /> : "filtros"}
+        </button>
       </div>
 
-      {/**precio */}
-      <div className="mt-4 px-5">
-        <p className="">Precio</p>
-        <div className="flex gap-2">
-          <input
-            type="number"
-            value={precioRango.min}
-            onChange={(e) =>
-              setPrecioRango({
-                ...precioRango,
-                min: +e.target.value === "" ? 0 : parseInt(e.target.value),
-              })
-            }
-            className="border w-20 p-1 rounded"
-            placeholder="de"
-          />
-          <input
-            type="number"
-            value={precioRango.max}
-            onChange={(e) =>
-              setPrecioRango({
-                ...precioRango,
-                max:
-                  +e.target.value === ""
-                    ? 200000
-                    : parseInt(e.target.value, 10),
-              })
-            }
-            className="border w-20 p-1 rounded"
-            placeholder="hasta"
+      <aside className="hidden lg:block lg:w-64 p-4 shadow-xl">
+        <h3 className="text-xl py-2">Filtrar por</h3>
+        {/**categorias */}
+        <Filtros
+          selectedCategorias={selectedCategorias}
+          handleCambioCategoria={handleCambioCategoria}
+          setPrecioRango={setPrecioRango}
+          precioRango={precioRango}
+        />
+      </aside>
+      {filterOpen && (
+        <div
+          className="absolute top-auto left-auto py-8 px-3 shadow-xl bg-white"
+          ref={filterRef}
+        >
+          <Filtros
+            selectedCategorias={selectedCategorias}
+            handleCambioCategoria={handleCambioCategoria}
+            setPrecioRango={setPrecioRango}
+            precioRango={precioRango}
           />
         </div>
-      </div>
-    </aside>
+      )}
+    </div>
   );
 }

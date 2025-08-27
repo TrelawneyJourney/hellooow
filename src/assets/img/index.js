@@ -40,7 +40,10 @@ import categoria2 from "./categoria-2.webp";
 import categoria3 from "./categoria-3.webp";
 import categoria4 from "./categoria-4.webp";
 
+import contact from "./contact.webp";
+
 export {
+  contact,
   hero,
   hero2,
   hero3,

@@ -39,7 +39,7 @@ export default function ProductsPage() {
 
   return (
     <Container>
-      <div className="flex py-4 gap-4">
+      <div className="flex flex-col lg:flex-row py-4 gap-4">
         <SideBarFilters
           selectedCategorias={selectedCategorias}
           setSelectedCategorias={setSelectedCategorias}

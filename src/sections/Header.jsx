@@ -1,27 +1,16 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import logo from "../../public/logo.svg";
 import { LuShoppingCart, LuAlignJustify, LuX } from "react-icons/lu";
 import Nav from "../components/Nav";
 import LoginCarrito from "../components/LoginCarrito";
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
+import { useClickOut } from "../hooks/useClickOut";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const menuRef = useRef();
 
-  useEffect(() => {
-    const handleClickOut = (e) => {
-      if (menuRef.current && !menuRef.current.contains(e.target)) {
-        setMenuOpen(false);
-      }
-    };
-    if (menuOpen) {
-      document.addEventListener("mousedown", handleClickOut);
-    }
-    return () => {
-      document.removeEventListener("mousedown", handleClickOut);
-    };
-  }, [menuOpen]);
+  useClickOut(menuRef, () => setMenuOpen(false));
 
   return (
     <div className="">
