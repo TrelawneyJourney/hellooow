@@ -1,14 +1,19 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import logo from "../../public/logo.svg";
 import { LuShoppingCart, LuAlignJustify, LuX } from "react-icons/lu";
 import Nav from "../components/Nav";
 import LoginCarrito from "../components/LoginCarrito";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useClickOut } from "../hooks/useClickOut";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const menuRef = useRef();
+  const location = useLocation();
+
+  useEffect(() => {
+    setMenuOpen(false);
+  }, [location]);
 
   useClickOut(menuRef, () => setMenuOpen(false));
 
@@ -54,7 +59,11 @@ export default function Header() {
 
           {menuOpen && (
             <div
-              className="absolute top-full left-0 w-full bg-amber-100 shadow-md lg:hidden px-4 z-40"
+              className={`absolute top-full left-0 w-full bg-amber-100 shadow-md lg:hidden px-4 z-40 transform transition-transform duration-300 ease-in-out ${
+                menuOpen
+                  ? "translate-y-0 opacity-100"
+                  : "-translate-y-5 opacity-0 pointer-events-none"
+              }`}
               ref={menuRef}
             >
               <div className="flex flex-col items-center gap-4 py-4">
