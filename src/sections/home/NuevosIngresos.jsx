@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 export default function NuevosIngresos() {
   return (
     <Container>
-      <div className="flex flex-col mt-[24rem] md:mt-[30rem] text-center lg:text-start  lg:mt-52 mb-10">
+      <div className="flex flex-col mt-16 text-center lg:text-start lg:mt-52 mb-10">
         <p className="section-titulo mb-1">nuevos ingresos</p>
         <Link
           to="/products"

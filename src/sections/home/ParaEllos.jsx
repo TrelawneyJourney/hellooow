@@ -6,8 +6,8 @@ export default function ParaEllos() {
   const navigate = useNavigate();
 
   return (
-    <section className="h-[850px] md:h-[1100px] lg:h-[600px]">
-      <div className="relative h-[500px] bg-amber-100">
+    <section className="pb-6 mb-6">
+      <div className="relative lg:h-[500px] pb-6 bg-amber-100">
         <Container>
           <div className="flex flex-col justify-center lg:flex-row lg:justify-between pt-8">
             <div className=" flex justify-center lg:justify-start">

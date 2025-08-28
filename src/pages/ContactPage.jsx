@@ -108,7 +108,10 @@ export default function ContactPage() {
               </div>
 
               {error && <p className="text-red-500 text-sm">{error}</p>}
-              <button type="submit" className="btn-black">
+              <button
+                type="submit"
+                className="btn-black self-center lg:self-start"
+              >
                 Enviar
               </button>
             </form>

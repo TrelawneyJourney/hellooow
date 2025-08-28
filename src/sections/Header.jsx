@@ -59,11 +59,7 @@ export default function Header() {
 
           {menuOpen && (
             <div
-              className={`absolute top-full left-0 w-full bg-amber-100 shadow-md lg:hidden px-4 z-40 transform transition-transform duration-300 ease-in-out ${
-                menuOpen
-                  ? "translate-y-0 opacity-100"
-                  : "-translate-y-5 opacity-0 pointer-events-none"
-              }`}
+              className="absolute top-full left-0 w-full bg-amber-100 shadow-md lg:hidden px-4 z-40"
               ref={menuRef}
             >
               <div className="flex flex-col items-center gap-4 py-4">

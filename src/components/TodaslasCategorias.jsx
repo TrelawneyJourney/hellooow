@@ -15,7 +15,7 @@ export default function TodaslasCategorias() {
               renderItem={(c) => (
                 <Link
                   to={`/products/${c}`}
-                  className="uppercase text-center links"
+                  className="uppercase flex items-center justify-center links"
                 >
                   {c}
                 </Link>
