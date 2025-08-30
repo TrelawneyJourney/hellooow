@@ -15,7 +15,9 @@ export default function ProductsPage() {
   const { categoria } = useParams();
 
   const filterProducts = productos
-    .filter((p) => (categoria ? p.categoria === categoria : true))
+    .filter((p) =>
+      categoria && categoria !== "todos" ? p.categoria === categoria : true
+    )
     .filter((p) =>
       selectedCategorias.length > 0
         ? selectedCategorias.includes(p.categoria)
