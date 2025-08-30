@@ -15,6 +15,8 @@ export default function ProductsGrid({ products }) {
             .slice(0, mostrarProd)
             .map((p) => (
               <CardImg
+                key={p.id}
+                prodId={p.id}
                 nombre={p.nombre}
                 categoria={p.categoria}
                 imgUrl={p.imgUrl}

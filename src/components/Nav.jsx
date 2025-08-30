@@ -10,8 +10,9 @@ export default function Nav({ mobile = false }) {
           : "hidden lg:flex lg:justify-center lg:gap-5 text-sm"
       }`}
     >
-      {navItems.map((i) => (
+      {navItems.map((i, ind) => (
         <NavLink
+          key={ind}
           to={i.to}
           className={({ isActive }) =>
             isActive ? "text-amber-500" : "hover:text-amber-300"

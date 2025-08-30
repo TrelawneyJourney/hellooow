@@ -12,21 +12,36 @@ import {
   prod5,
   prod6,
   prod7,
+  prod7d1,
   prod8,
+  prod8d1,
   prod9,
+  prod9d1,
   prod10,
+  prod10d1,
   prod11,
+  prod11d1,
   prod12,
+  prod12d1,
   prod13,
+  prod13d1,
   prod14,
+  prod14d1,
   prod15,
   prod16,
+  prod16d1,
   prod17,
+  prod17d1,
   prod18,
+  prod18d1,
   prod19,
+  prod19d1,
   prod20,
+  prod20d1,
   prod21,
+  prod21d1,
   prod22,
+  prod22d1,
   prod23,
   prod24,
   prod25,
@@ -38,7 +53,7 @@ import {
   categoria1,
   categoria2,
   categoria3,
-  // categoria4,
+  categoria4,
 } from "../assets/img";
 
 export const navItems = [
@@ -73,36 +88,42 @@ export const cuadros = [
 
 export const nuevosIngresos = [
   {
+    id: 25,
     imgUrl: prod1,
     categoria: "decoración",
     nombre: "jarrón gato",
     precio: 14000,
   },
   {
+    id: 26,
     imgUrl: prod2,
     categoria: "decoración",
     nombre: "alfombra gato",
     precio: 25000,
   },
   {
+    id: 27,
     imgUrl: prod3,
     categoria: "baño",
     nombre: "toalla de mano gato",
     precio: 14000,
   },
   {
+    id: 28,
     imgUrl: prod4,
     categoria: "decoración",
     nombre: "jarrón garra",
     precio: 10500,
   },
   {
+    id: 29,
     imgUrl: prod5,
     categoria: "decoración",
     nombre: "cuadro gato",
     precio: 16000,
   },
   {
+    id: 30,
     imgUrl: prod6,
     categoria: "baño",
     nombre: "dispenser gato",
@@ -125,10 +146,10 @@ export const masBuscadas = [
     imgUrl: categoria3,
     categoria: "cocina",
   },
-  // {
-  //   imgUrl: categoria4,
-  //   categoria: "accesorios",
-  // },
+  {
+    imgUrl: categoria4,
+    categoria: "accesorios",
+  },
 ];
 export const categorias = [
   "cocina",
@@ -149,6 +170,7 @@ export const productos = [
     categoria: "decoración",
     precio: 22286,
     imgUrl: prod7,
+    imgDetail: prod7d1,
   },
   {
     id: 2,
@@ -158,6 +180,7 @@ export const productos = [
     categoria: "decoración",
     precio: 13012,
     imgUrl: prod8,
+    imgDetail: prod8d1,
   },
   {
     id: 3,
@@ -167,6 +190,7 @@ export const productos = [
     categoria: "decoración",
     precio: 23815,
     imgUrl: prod9,
+    imgDetail: prod9d1,
   },
   {
     id: 4,
@@ -176,6 +200,7 @@ export const productos = [
     categoria: "cocina",
     precio: 9059,
     imgUrl: prod10,
+    imgDetail: prod10d1,
   },
   {
     id: 5,
@@ -185,6 +210,7 @@ export const productos = [
     categoria: "cocina",
     precio: 7129,
     imgUrl: prod11,
+    imgDetail: prod11d1,
   },
   {
     id: 6,
@@ -194,6 +220,7 @@ export const productos = [
     categoria: "cocina",
     precio: 25507,
     imgUrl: prod12,
+    imgDetail: prod12d1,
   },
   {
     id: 7,
@@ -203,6 +230,7 @@ export const productos = [
     categoria: "accesorios",
     precio: 3343,
     imgUrl: prod13,
+    imgDetail: prod13d1,
   },
   {
     id: 8,
@@ -212,6 +240,7 @@ export const productos = [
     categoria: "accesorios",
     precio: 2386,
     imgUrl: prod14,
+    imgDetail: prod14d1,
   },
   {
     id: 9,
@@ -230,6 +259,7 @@ export const productos = [
     categoria: "baño",
     precio: 26198,
     imgUrl: prod16,
+    imgDetail: prod16d1,
   },
   {
     id: 11,
@@ -239,6 +269,7 @@ export const productos = [
     categoria: "decoración",
     precio: 112292,
     imgUrl: prod17,
+    imgDetail: prod17d1,
   },
   {
     id: 12,
@@ -248,6 +279,7 @@ export const productos = [
     categoria: "baño",
     precio: 32849,
     imgUrl: prod18,
+    imgDetail: prod18d1,
   },
   {
     id: 13,
@@ -257,6 +289,7 @@ export const productos = [
     categoria: "baño",
     precio: 14758,
     imgUrl: prod19,
+    imgDetail: prod19d1,
   },
   {
     id: 14,
@@ -266,6 +299,7 @@ export const productos = [
     categoria: "papelería",
     precio: 14024,
     imgUrl: prod20,
+    imgDetail: prod20d1,
   },
   {
     id: 15,
@@ -275,6 +309,7 @@ export const productos = [
     categoria: "papelería",
     precio: 9333,
     imgUrl: prod21,
+    imgDetail: prod21d1,
   },
   {
     id: 16,
@@ -284,6 +319,7 @@ export const productos = [
     categoria: "papelería",
     precio: 11310,
     imgUrl: prod22,
+    imgDetail: prod22d1,
   },
   {
     id: 17,
