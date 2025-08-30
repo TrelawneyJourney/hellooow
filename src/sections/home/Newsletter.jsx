@@ -42,7 +42,7 @@ export default function Newsletter() {
             </p>
             <form
               onSubmit={handleSubmit}
-              className="flex flex-col items-center lg:items-end gap-2 w-full max-w-sm"
+              className="flex flex-col items-center lg:items-end gap-6 w-full max-w-sm"
             >
               <label htmlFor="email" className="sr-only">
                 Email

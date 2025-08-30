@@ -7,11 +7,13 @@ export default function CardImg({ prodId, imgUrl, nombre, categoria, precio }) {
     <div className="w-full bg-white flex flex-col items-start overflow-hidden gap-2 mb-3 shadow-lg py-4 px-2">
       <Link
         to={`/products/detail/${prodId}`}
-        className="py-4 px-2 gap-2 flex flex-col"
+        className="w-full flex flex-col gap-3"
       >
-        <img src={imgUrl} alt={nombre} className="w-full cursor-pointer" />
+        <img src={imgUrl} alt={nombre} className=" w-full cursor-pointer" />
         <p className="font-light text-xs text-amber-400">{categoria}</p>
-        <p className="text-sm uppercase tracking-widest">{nombre}</p>
+        <p className="text-sm uppercase tracking-widest hover:underline">
+          {nombre}
+        </p>
       </Link>
 
       <p className="text-lg tracking-widest font-semibold">

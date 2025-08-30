@@ -63,7 +63,7 @@ export default function ProductDetail() {
             </div>
             <p
               className="text-xs text-neutral-400 hover:underline active:underline cursor-pointer"
-              onClick={() => navigate(`/products/todos`)}
+              onClick={() => navigate(`/products`)}
             >
               volver a todos los productos
             </p>

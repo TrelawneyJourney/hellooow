@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import SideBarFilters from "../sections/products/SideBarFilters";
 import { productos } from "../constants/index";
 import Container from "../components/Container";
@@ -6,6 +6,7 @@ import SortBar from "../components/SortBar";
 import ProductsGrid from "../sections/products/ProductsGrid";
 import { TiDelete } from "react-icons/ti";
 import { useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export default function ProductsPage() {
   const [selectedCategorias, setSelectedCategorias] = useState([]);
@@ -13,6 +14,7 @@ export default function ProductsPage() {
   const [sortOrder, setSortOrder] = useState("asc");
 
   const { categoria } = useParams();
+  const navigate = useNavigate();
 
   const filterProducts = productos
     .filter((p) =>
@@ -28,10 +30,17 @@ export default function ProductsPage() {
       sortOrder === "asc" ? a.precio - b.precio : b.precio - a.precio
     );
 
+  useEffect(() => {
+    if (categoria) {
+      setSelectedCategorias([categoria]);
+    }
+  }, [categoria]);
+
   const resetFilters = () => {
     setSelectedCategorias([]);
     setPrecioRango({ min: 0, max: 200000 });
     setSortOrder("asc");
+    navigate("/products");
   };
   const hasFilter =
     selectedCategorias.length > 0 ||
